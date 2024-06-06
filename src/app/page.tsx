@@ -1,18 +1,21 @@
-"use client"
+"use client";
 
-import { currentUserState } from "@/atoms/user";
-import { useRouter } from "next/navigation";
-import { useRecoilState } from "recoil";
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useRecoilState } from 'recoil';
+import { currentUserState } from '@/atoms/user';
 
 export default function Home() {
   const [user, setUser] = useRecoilState(currentUserState);
   const router = useRouter();
 
-  if(user==null){
-      router.push('/login')
-      return ;
-  }
+  useEffect(() => {
+    if (user === null) {
+      router.push('/login');
+    } else {
+      router.push('/feed');
+    }
+  }, [user, router]);
 
-  router.push('/feed');
-  return ;
+  return null;
 }
