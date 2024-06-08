@@ -38,6 +38,7 @@ const Post: React.FC = () => {
         cols={54}
         onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setContent(e.target.value)}
         placeholder="Write Here..."
+        maxLength={150}
         required
       />
       <button className='text-white bg-pink-600 px-6 py-2.5 rounded-md text-sm font-semibold' type="submit">Write</button>
