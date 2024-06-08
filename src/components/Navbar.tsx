@@ -17,7 +17,7 @@ const Navbar : React.FC = () => {
     }
 
     return (
-        <div className='h-16 text-xl shadow flex fixed justify-between items-center px-16 w-screen bg-white'>
+        <div className='h-16 px-2 md:text-xl shadow flex fixed justify-between items-center md:px-16 w-screen bg-white'>
             <h1 className='text-center font-semibold text-2xl text-pink-500 '>TweetX</h1>
             <div className='flex gap-6 font-medium justify-center items-center'>
                <Link href='/feed' className={classNames(tab==='/feed' ? 'text-pink-500' : 'text-pink-200')}>Feed</Link>

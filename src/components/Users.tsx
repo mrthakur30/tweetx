@@ -74,9 +74,9 @@ const Users: React.FC = () => {
   return (
     <div className='flex justify-center '>
       <Navbar />
-      <div className='py-20 flex flex-col gap-3 w-1/3 '>
+      <div className='py-20 flex flex-col gap-3 md:w-1/3 '>
         {users.map((user) => (
-          <div className='flex  items-center h-32 border-b border-pink-500 justify-between' key={user.id}>
+          <div className='flex gap-5 items-center h-32 border-b border-pink-500 justify-between' key={user.id}>
             <Circle size={50} color='pink'/>
             <div className=''>
               <p className='text-2xl text-pink-600'>{user.name}</p>

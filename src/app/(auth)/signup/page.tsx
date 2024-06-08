@@ -71,7 +71,7 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <main className='w-screen h-screen md:px-16'>
+    <main className='w-screen h-screen px-5 md:px-16'>
     <div className='pt-10 '>
       <h1 className='text-pink-400 text-2xl'>TweetX</h1>
       <button
@@ -82,7 +82,7 @@ const Signup: React.FC = () => {
     </div>
     <div>
       <h1 className='text-2xl text-slate-700 my-5 font-semibold'>Sign Up</h1>
-      <form className='w-1/3 flex flex-col gap-6' onSubmit={handleSignup}>
+      <form className='md:w-1/3 flex flex-col gap-6' onSubmit={handleSignup}>
       <input
         className='px-3 py-4 bg-pink-100 rounded-sm focus:outline-none' 
         type="text"

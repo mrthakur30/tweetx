@@ -50,7 +50,7 @@ const Profile: React.FC = () => {
   console.log(profile);
 
   return (
-    <div className='w-1/2 flex gap-2 items-center flex-col'>
+    <div className='md:w-1/2 flex gap-2 items-center flex-col'>
       <h1 className='text-pink-600 text-2xl'>{profile.name}</h1>
       <p className='text-pink-600 text-md'>Email: {profile.email}</p>
       <span className='flex  text-pink-300 gap-4'>
@@ -59,7 +59,7 @@ const Profile: React.FC = () => {
         <p>Following: {profile.following.length}</p>
       </span>
 
-      <div className='flex justify-around border-t w-1/2 text-xl border-pink-200 gap-6 my-8'>
+      <div className='flex items-center justify-around border-t md:w-1/2 text-xl border-pink-200 gap-6 my-8'>
         <button className={classNames('px-2',activeTab==='posts'? 'text-pink-600  border-t-2 border-pink-600' : 'text-pink-300')} onClick={() => setActiveTab('posts')}>Posts</button>
         <button className={classNames('px-2',activeTab==='followers'? 'text-pink-600 border-t-2 border-pink-600' : 'text-pink-300')} onClick={() => setActiveTab('followers')}>Followers</button>
         <button className={classNames('px-2',activeTab==='following'? 'text-pink-600 border-t-2 border-pink-600' : 'text-pink-300')} onClick={() => setActiveTab('following')}>Following</button>

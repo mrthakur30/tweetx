@@ -32,7 +32,7 @@ const Post: React.FC = () => {
   return (
     <form className='flex gap-10 justify-between my-5  items-end' onSubmit={handlePost}>
       <textarea
-        className='px-3 py-2 bg-pink-100 rounded-sm focus:outline-none'
+        className='px-3 py-2 md:w-auto w-3/4 bg-pink-100 rounded-sm focus:outline-none'
         value={content}
         rows={1}
         cols={54}
